@@ -14,7 +14,8 @@
     "consola": "^2.15.3",
     "dotenv": "^16.0.3",
     "nodemon": "^2.0.19",
-    "ts-node-dev": "^2.0.0"
+    "ts-node-dev": "^2.0.0",
+    "vsf-deployme-api-client": "^0.1.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.13"

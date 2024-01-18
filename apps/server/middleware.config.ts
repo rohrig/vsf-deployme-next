@@ -3,7 +3,10 @@ dotenv.config();
 
 const config = {
   integrations: {
-    /* VSF integration config */
+    boilerplate: {
+      location: 'vsf-deployme-api-client/server',
+      configuration: {},
+    },
   },
 };
 

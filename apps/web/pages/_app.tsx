@@ -3,11 +3,21 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { Hydrate, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { initSDK, buildModule } from '@vue-storefront/sdk';
 import classNames from 'classnames';
 import { appWithTranslation } from 'next-i18next';
 import { SdkProvider } from '~/sdk';
 import { fontBody, fontHeadings } from '~/styles/fonts';
 import '~/styles/main.scss';
+import { boilerplateModule, BoilerplateModuleType } from '../../../../packages/sdk/src';
+
+const sdkConfig = {
+  boilerplate: buildModule<BoilerplateModuleType>(boilerplateModule, {
+    apiUrl: 'http://localhost:4000/boilerplate',
+  }),
+};
+
+export const sdk = initSDK<typeof sdkConfig>(sdkConfig);
 
 function App({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(

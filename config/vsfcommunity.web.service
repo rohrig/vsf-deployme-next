@@ -1,0 +1,17 @@
+[Unit]
+Description=vsfcommunity-web service
+Documentation=https://vsfcommunity.dev
+After=network.target
+
+
+[Service]
+Restart=always
+RestartSec=10
+TimeoutSec=300
+WorkingDirectory=/var/www/html/live/apps/web
+ExecStart=/usr/bin/bash -c 'yarn start'
+
+[Install]
+WantedBy=multi-user.target
+
+# /etc/systemd/system/vsfcommunity-web.service

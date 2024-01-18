@@ -22,3 +22,4 @@ export * from './RenderContent';
 export * from './ScrollToTopButton';
 export * from './ShippingMethod';
 export * from './ui';
+export * from './RenderJson';
