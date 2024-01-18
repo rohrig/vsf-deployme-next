@@ -22,7 +22,7 @@ jobs:
       - run: |
           yarn
           yarn build
-          tar -czf "${GITHUB_SHA}".tar.gz ./apps
+          tar -czf "${GITHUB_SHA}".tar.gz .
       - name: Store app-artifacts for distribution
         uses: actions/upload-artifact@v3
         with:
