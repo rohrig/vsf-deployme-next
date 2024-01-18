@@ -22,10 +22,10 @@ jobs:
       - run: |
           yarn
           yarn build
-          # Create a copy of the directory
-          cp -r ./ temp_dir
-          tar -czf "${GITHUB_SHA}".tar.gz temp_dir
-          rm -rf temp_dir
+          mkdir ../temp_dir
+          cp -r ./* ../temp_dir/
+          tar -czf "${GITHUB_SHA}".tar.gz -C ../temp_dir .
+          rm -rf ../temp_dir
       - name: Store app-artifacts for distribution
         uses: actions/upload-artifact@v3
         with:
