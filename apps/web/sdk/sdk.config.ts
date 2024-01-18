@@ -4,7 +4,7 @@ import { BoilerplateModuleType, boilerplateModule } from 'vsf-deployme-sdk';
 
 const options: CreateSdkOptions = {
   middleware: {
-    apiUrl: 'http://localhost:4000',
+    apiUrl: 'https://shoppernauts.com/api/',
   },
 };
 
