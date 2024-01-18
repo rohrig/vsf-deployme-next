@@ -6,10 +6,10 @@ import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { initSDK, buildModule } from '@vue-storefront/sdk';
 import classNames from 'classnames';
 import { appWithTranslation } from 'next-i18next';
+import { boilerplateModule, BoilerplateModuleType } from 'vsf-deployme-sdk';
 import { SdkProvider } from '~/sdk';
 import { fontBody, fontHeadings } from '~/styles/fonts';
 import '~/styles/main.scss';
-import { boilerplateModule, BoilerplateModuleType } from '../../../../packages/sdk/src';
 
 const sdkConfig = {
   boilerplate: buildModule<BoilerplateModuleType>(boilerplateModule, {
