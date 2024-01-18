@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  NODE_VERSION: 16.17.1
+  NODE_VERSION: 18.x
   IP_ADDRESS: "23.88.98.244"
 
 jobs:
