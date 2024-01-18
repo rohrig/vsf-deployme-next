@@ -4,7 +4,7 @@ import { RenderJson } from '~/components/RenderJson';
 import { sdk } from '~/pages/_app';
 
 export default function PageGetT11() {
-  const [data, setData] = useState<null | Object>(null);
+  const [data, setData] = useState<null | object>(null);
 
   const hitExampleMethodApi = async () => {
     const data = await sdk.boilerplate.getProduct('1');
