@@ -4,7 +4,7 @@ import { BoilerplateModuleType, boilerplateModule } from 'vsf-deployme-sdk';
 
 const options: CreateSdkOptions = {
   middleware: {
-    apiUrl: `${process.env.MIDDLEWARE_API}/api/`,
+    apiUrl: `${process.env.MIDDLEWARE_URL}/api/`,
   },
 };
 

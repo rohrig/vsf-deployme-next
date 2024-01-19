@@ -20,7 +20,7 @@ jobs:
           node-version: ${{env.NODE_VERSION}}
           cache: 'yarn'
         env:
-          MIDDLEWARE_API: https://shoppernautes.com    
+          MIDDLEWARE_URL: https://shoppernautes.com    
       - run: |
           yarn
           yarn build

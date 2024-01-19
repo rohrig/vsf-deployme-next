@@ -13,7 +13,7 @@ import '~/styles/main.scss';
 
 const sdkConfig = {
   boilerplate: buildModule<BoilerplateModuleType>(boilerplateModule, {
-    apiUrl: `${process.env.MIDDLEWARE_API}/api/boilerplate`,
+    apiUrl: `${process.env.MIDDLEWARE_URL}/api/boilerplate`,
   }),
 };
 
