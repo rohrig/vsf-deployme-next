@@ -6,7 +6,7 @@ const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const options: CreateSdkOptions = {
   middleware: {
-    apiUrl: `${baseUrl}/api/`,
+    apiUrl: `${baseUrl}/`,
   },
 };
 

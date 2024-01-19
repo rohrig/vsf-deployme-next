@@ -17,7 +17,7 @@ const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const sdkConfig = {
   boilerplate: buildModule<BoilerplateModuleType>(boilerplateModule, {
-    apiUrl: `${baseUrl}/api/boilerplate`,
+    apiUrl: `${baseUrl}/boilerplate`,
   }),
 };
 

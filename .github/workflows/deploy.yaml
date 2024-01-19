@@ -20,7 +20,7 @@ jobs:
           node-version: ${{env.NODE_VERSION}}
           cache: 'yarn'
         env:
-          NEXT_PUBLIC_API_URL: https://shoppernauts.com    
+          NEXT_PUBLIC_API_URL: https://shoppernauts.com/api   
       - run: |
           yarn
           yarn build
