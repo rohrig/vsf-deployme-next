@@ -13,7 +13,7 @@ import '~/styles/main.scss';
 
 const sdkConfig = {
   boilerplate: buildModule<BoilerplateModuleType>(boilerplateModule, {
-    apiUrl: 'https://shoppernauts.com/api/boilerplate',
+    apiUrl: `${process.env.MIDDLEWARE_API}/api/boilerplate`,
   }),
 };
 
