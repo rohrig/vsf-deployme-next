@@ -11,7 +11,9 @@ import { SdkProvider } from '~/sdk';
 import { fontBody, fontHeadings } from '~/styles/fonts';
 import '~/styles/main.scss';
 
-const baseUrl = process.env.MIDDLEWARE_URL;
+console.log(process.env.NEXT_PUBLIC_API_URL);
+
+const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const sdkConfig = {
   boilerplate: buildModule<BoilerplateModuleType>(boilerplateModule, {
