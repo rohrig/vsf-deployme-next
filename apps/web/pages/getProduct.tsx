@@ -17,7 +17,12 @@ export default function PageGetT11() {
         <SfButton type="button" onClick={hitExampleMethodApi}>
           Call getProduct
         </SfButton>
-
+        <div
+          className="w-[500px] h-min-12 h-auto p-4 bg-white text-black
+         rounded-md flex items-center justify-center"
+        >
+          NEXT_PUBLIC_API_URL: {process.env.NEXT_PUBLIC_API_URL}
+        </div>
         <div className="w-[500px] h-min-12 h-auto p-4 bg-gray-900 rounded-md flex items-center justify-center">
           {data ? <RenderJson json={data} /> : 'Click the button'}
         </div>
