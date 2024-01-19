@@ -2,9 +2,11 @@ import { CreateSdkOptions, createSdk } from '@vue-storefront/next';
 import { SdkModule, sdkModule } from '@vue-storefront/storefront-boilerplate-sdk';
 import { BoilerplateModuleType, boilerplateModule } from 'vsf-deployme-sdk';
 
+const baseUrl = process.env.MIDDLEWARE_URL;
+
 const options: CreateSdkOptions = {
   middleware: {
-    apiUrl: `${process.env.MIDDLEWARE_URL}/api/`,
+    apiUrl: `${baseUrl}/api/`,
   },
 };
 
