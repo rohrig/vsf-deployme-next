@@ -21,7 +21,7 @@ jobs:
           cache: 'yarn'  
       - run: |
           touch .env
-          echo 'NEXT_PUBLIC_API_URL=https://shoppernauts.com/api" >> .env
+          echo "NEXT_PUBLIC_API_URL=https://shoppernauts.com/api" >> .env
           mv .env apps/web/.env
           yarn
           yarn build
