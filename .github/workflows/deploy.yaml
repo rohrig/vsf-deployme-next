@@ -9,7 +9,7 @@ env:
   NODE_VERSION: 18.x
   IP_ADDRESS: "23.88.98.244"
   NEXT_PUBLIC_API_URL: https://shoppernauts.com/api
-  RANDOM: CheckingRandomVar
+  NEXT_PUBLIC_WEB_VERSION: v.1.0.0
 
 jobs:
   create-deployment-artifacts:
@@ -24,7 +24,7 @@ jobs:
       - run: |
           touch .env
           echo "NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL" >> .env
-          echo "RANDOM=$RANDOM" >> .env
+          echo "NEXT_PUBLIC_WEB_VERSION=$NEXT_PUBLIC_WEB_VERSION" >> .env
           mv .env apps/web/.env
           yarn
           yarn build
