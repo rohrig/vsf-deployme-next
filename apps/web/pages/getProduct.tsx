@@ -21,9 +21,9 @@ export default function PageGetT11() {
           className="w-[500px] h-min-12 h-auto p-4 bg-white text-black
          rounded-md flex items-center justify-center"
         >
-          <div>NEXT_PUBLIC_API_URL: {process.env.NEXT_PUBLIC_API_URL}</div>
-          <div>VERSION: {process.env.NEXT_PUBLIC_WEB_VERSION}</div>
-          <div>VERSION: {process.env.GITHUB_SHA}</div>
+          <div className="mb-3">API URL: {process.env.NEXT_PUBLIC_API_URL}</div>
+          <div className="mb-3">Version: {process.env.NEXT_PUBLIC_RELEASE_VERSION}</div>
+          <div className="mb-3">Commit SHA: {process.env.NEXT_PUBLIC_GITHUB_SHA}</div>
         </div>
         <div className="w-[500px] h-min-12 h-auto p-4 bg-gray-900 rounded-md flex items-center justify-center">
           {data ? <RenderJson json={data} /> : 'Click the button'}
